@@ -1,0 +1,41 @@
+.movie-page {
+  display: flex;
+  padding: 40px;
+  color: white;
+
+  .poster {
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 40px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff3c00;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background: #e23400;
+      }
+    }
+  }
+}
