@@ -7,12 +7,11 @@ export const movies: Movie[] = [
     year: 2022,
     level: 'intermediate',
     poster: '../../public/poster/h280_51328746.jpg',
-  },
-  {
-    id: 'inception',
-    title: 'Inception',
-    year: 2010,
-    level: 'advanced',
-    poster: '/poster/inception.jpg',
+    video: '../../public/video/Avatar2.mp4',
+    subtitles: {
+      en: '../../public/subtitles/Avatar2-en.vtt',
+      ru: '../../public/subtitles/Avatar2-ru.vtt',
+      dual: '../../public/subtitles/Avatar2-dual.vtt',
+    },
   },
 ];
