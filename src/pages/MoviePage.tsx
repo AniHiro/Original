@@ -12,14 +12,12 @@ const MoviePage: React.FC = () => {
   const dispatch = useDispatch();
   const favorites = useSelector((state: RootState) => state.favorites);
   const [showPlayer, setShowPlayer] = useState(false);
-
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const handleFullscreenChange = () => {
       const fullscreenElement = document.fullscreenElement;
       if (!fullscreenElement && showPlayer) {
-        // Выходим из полноэкранного — останавливаем видео и скрываем плеер
         if (videoRef.current) {
           videoRef.current.pause();
           videoRef.current.currentTime = 0;
@@ -29,7 +27,6 @@ const MoviePage: React.FC = () => {
     };
 
     document.addEventListener('fullscreenchange', handleFullscreenChange);
-
     return () => {
       document.removeEventListener('fullscreenchange', handleFullscreenChange);
     };
@@ -50,7 +47,7 @@ const MoviePage: React.FC = () => {
   const handleWatchClick = () => {
     setShowPlayer(true);
     setTimeout(() => {
-      if (videoRef.current && videoRef.current.requestFullscreen) {
+      if (videoRef.current?.requestFullscreen) {
         videoRef.current.requestFullscreen().catch((err) => {
           console.warn('Не удалось включить полноэкранный режим', err);
         });
@@ -60,54 +57,54 @@ const MoviePage: React.FC = () => {
 
   return (
     <div className="movie-page">
-      <img src={movie.poster} alt={movie.title} className="poster" />
-      <div className="info">
-        <h1>{movie.title}</h1>
-        <p>Год выпуска: {movie.year}</p>
-        <p>Уровень: {movie.level}</p>
-
-        <button onClick={handleWatchClick}>Смотреть</button>
-
-        <button onClick={handleToggleFavorite}>
-          {isFavorite ? 'Убрать из избранного' : 'Добавить в избранное'}
-        </button>
+      {/* ВЕРХНЯЯ ЧАСТЬ: Постер и кнопки */}
+      <div className="movie-hero">
+        <img src={movie.poster} alt={movie.title} className="poster" />
+        <div className="controls">
+          <h1>{movie.title}</h1>
+          <button onClick={handleWatchClick}>Смотреть</button>
+          <button onClick={handleToggleFavorite}>
+            {isFavorite ? 'Убрать из избранного' : 'Добавить в избранное'}
+          </button>
+        </div>
       </div>
 
+      {/* ПЛЕЕР */}
       {showPlayer && (
         <div className="video-player">
           <video ref={videoRef} controls autoPlay>
             <source src={movie.video} type="video/mp4" />
             {movie.subtitles?.en && (
-              <track
-                label='English'
-                kind="subtitles"
-                srcLang="en"
-                src={movie.subtitles.en}
-                default
-              />
+              <track label="English" kind="subtitles" srcLang="en" src={movie.subtitles.en} default />
             )}
-            {movie.subtitles?.en && (
-              <track
-                label='Русский'
-                kind="subtitles"
-                srcLang="ru"
-                src={movie.subtitles.ru}
-                default
-              />
+            {movie.subtitles?.ru && (
+              <track label="Русский" kind="subtitles" srcLang="ru" src={movie.subtitles.ru} />
             )}
-            {movie.subtitles?.en && (
-              <track
-                label='Двойные'
-                kind="subtitles"
-                srcLang="ru-en"
-                src={movie.subtitles.dual}
-                default
-              />
+            {movie.subtitles?.dual && (
+              <track label="Двойные" kind="subtitles" srcLang="ru-en" src={movie.subtitles.dual} />
             )}
             Ваш браузер не поддерживает видео.
           </video>
         </div>
       )}
+
+      {/* ОПИСАНИЕ */}
+      <section className="movie-description">
+        <h2>Описание</h2>
+        <p>{movie.description}</p>
+      </section>
+
+      {/* ИНФОРМАЦИЯ */}
+      <section className="movie-info">
+        <h2>Информация о фильме</h2>
+        <ul>
+          <li><strong>Год выпуска:</strong> {movie.year}</li>
+          <li><strong>Жанры:</strong> {movie.genres.join(', ')}</li>
+          <li><strong>Длительность:</strong> {movie.duration}</li>
+          <li><strong>Рейтинг:</strong> {movie.rating}/10</li>
+          <li><strong>Уровень:</strong> {movie.level}</li>
+        </ul>
+      </section>
     </div>
   );
 };
