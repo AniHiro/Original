@@ -6,14 +6,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import type { RootState } from '../store';
 import { addFavorite, removeFavorite } from '../store/slices/favoritesSlice';
 
-
 const MoviePage: React.FC = () => {
   const { id } = useParams();
   const movie = movies.find((m) => m.id === id);
   const dispatch = useDispatch();
   const favorites = useSelector((state: RootState) => state.favorites);
   const [showPlayer, setShowPlayer] = useState(false);
+
   const [showFullCast, setShowFullCast] = useState(false);
+
 
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -101,6 +102,7 @@ const MoviePage: React.FC = () => {
       <section className="movie-info">
         <h2>Информация о фильме</h2>
         <ul>
+
           <li><strong>Оригальное название:</strong> {movie.Originaltitle}</li>
           <li><strong>Уровень:</strong> {movie.level}</li>
           <li><strong>Аудиодорожка:</strong> {movie.Audiotrack}</li>
@@ -125,6 +127,13 @@ const MoviePage: React.FC = () => {
           <li><strong>Жанры:</strong> {movie.genres.join(', ')}</li>
           <li><strong>Длительность:</strong> {movie.duration}</li>
           <li><strong>Рейтинг:</strong> {movie.rating}/10</li>
+
+          <li><strong>Год выпуска:</strong> {movie.year}</li>
+          <li><strong>Жанры:</strong> {movie.genres.join(', ')}</li>
+          <li><strong>Длительность:</strong> {movie.duration}</li>
+          <li><strong>Рейтинг:</strong> {movie.rating}/10</li>
+          <li><strong>Уровень:</strong> {movie.level}</li>
+
         </ul>
       </section>
     </div>

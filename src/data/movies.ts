@@ -25,6 +25,5 @@ export const movies: Movie[] = [
       dual: '../../public/subtitles/Avatar2-dual.vtt'
     }
   },
-
 ];
 
