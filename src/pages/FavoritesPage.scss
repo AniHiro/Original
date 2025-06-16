@@ -1,0 +1,43 @@
+.favorites-page {
+  padding: 2rem;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+
+  .favorite-card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 0.5rem;
+      background-color: crimson;
+      color: white;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+}
+
+.favorites-empty {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: gray;
+}
