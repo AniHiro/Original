@@ -11,12 +11,13 @@ export interface Movie {
   rating: number;
   Originaltitle: string;
   Country: string;
-  Agelimit: number;
   Director: string;
   Cast: string;
   Audiotrack: string;
   Subtitles: string;
   subtitles?: {
+    chi?: string;
+    kor?: string;
     en?: string;
     ru?: string;
     dual?: string;

@@ -24,11 +24,8 @@ dist-ssr
 *.sw?
 
 /public/video/*
-/public/poster/*
-/public/subtitles
 *.mp4
 *.avi
 *.mkv
 *.jpg
 *.png
-*.vtt

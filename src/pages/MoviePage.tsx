@@ -12,9 +12,7 @@ const MoviePage: React.FC = () => {
   const dispatch = useDispatch();
   const favorites = useSelector((state: RootState) => state.favorites);
   const [showPlayer, setShowPlayer] = useState(false);
-
   const [showFullCast, setShowFullCast] = useState(false);
-
 
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -84,6 +82,12 @@ const MoviePage: React.FC = () => {
             {movie.subtitles?.ru && (
               <track label="Русский" kind="subtitles" srcLang="ru" src={movie.subtitles.ru} />
             )}
+            {movie.subtitles?.kor && (
+              <track label="Korea" kind="subtitles" srcLang="kor" src={movie.subtitles.kor} />
+            )}
+            {movie.subtitles?.chi && (
+              <track label="China" kind="subtitles" srcLang="chi" src={movie.subtitles.chi} />
+            )}
             {movie.subtitles?.dual && (
               <track label="Двойные" kind="subtitles" srcLang="ru-en" src={movie.subtitles.dual} />
             )}
@@ -102,7 +106,6 @@ const MoviePage: React.FC = () => {
       <section className="movie-info">
         <h2>Информация о фильме</h2>
         <ul>
-
           <li><strong>Оригальное название:</strong> {movie.Originaltitle}</li>
           <li><strong>Уровень:</strong> {movie.level}</li>
           <li><strong>Аудиодорожка:</strong> {movie.Audiotrack}</li>
@@ -123,17 +126,9 @@ const MoviePage: React.FC = () => {
             )}
           </li>
           <li><strong>Страна:</strong> {movie.Country}</li>
-          <li><strong>Возрастное ограничение:</strong> {movie.Agelimit}</li>
           <li><strong>Жанры:</strong> {movie.genres.join(', ')}</li>
           <li><strong>Длительность:</strong> {movie.duration}</li>
           <li><strong>Рейтинг:</strong> {movie.rating}/10</li>
-
-          <li><strong>Год выпуска:</strong> {movie.year}</li>
-          <li><strong>Жанры:</strong> {movie.genres.join(', ')}</li>
-          <li><strong>Длительность:</strong> {movie.duration}</li>
-          <li><strong>Рейтинг:</strong> {movie.rating}/10</li>
-          <li><strong>Уровень:</strong> {movie.level}</li>
-
         </ul>
       </section>
     </div>
