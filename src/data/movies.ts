@@ -4,6 +4,7 @@ export const movies: Movie[] = [
   {
     id: 'avatar2',
     title: 'Avatar: The Way of Water',
+    type: 'movie',
     year: 2022,
     level: 'intermediate',
     poster: '../../public/poster/h280_51328746.jpg',
@@ -27,6 +28,7 @@ export const movies: Movie[] = [
     {
     id: 'The.Match',
     title: 'The Match',
+    type: 'movie',
     year: 2025,
     level: 'intermediate',
     poster: '../../public/poster/The _Match.jpg',
@@ -50,6 +52,7 @@ export const movies: Movie[] = [
       {
     id: 'Dead Talents Society',
     title: 'Dead Talents Society',
+    type: 'movie',
     year: 2025,
     level: 'intermediate',
     poster: '../../public/poster/dead.talents.society.jpg',

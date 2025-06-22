@@ -5,6 +5,16 @@
   text-align: center;
 }
 
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -40,4 +50,5 @@
 .read-the-docs {
   color: #888;
 }
+
 

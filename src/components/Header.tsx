@@ -34,9 +34,10 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
       <nav>
         <ul>
           <li><Link to="/">Главная</Link></li>
-          <li><Link to="/movies">Фильмы</Link></li>
+          <li><Link to="/films">Фильмы</Link></li>
           <li><Link to="/series">Сериалы</Link></li>
-          <li><Link to="/cartoons">Мультфильмы</Link></li>
+          <li><Link to="/genre">Жанры</Link></li>
+          <li><Link to="/language">Языки</Link></li>
         </ul>
       </nav>
       <div className="search-box">

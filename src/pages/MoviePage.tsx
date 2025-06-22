@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import { movies } from '../data/movies';
 import './MoviePage.scss';
 import { useDispatch, useSelector } from 'react-redux';
@@ -60,16 +61,22 @@ const MoviePage: React.FC = () => {
   return (
     <div className="movie-page">
       {/* ВЕРХНЯЯ ЧАСТЬ: Постер и кнопки */}
-      <div className="movie-hero">
-        <img src={movie.poster} alt={movie.title} className="poster" />
-        <div className="controls">
-          <h1>{movie.title}</h1>
-          <button onClick={handleWatchClick}>Смотреть</button>
-          <button onClick={handleToggleFavorite}>
-            {isFavorite ? 'Убрать из избранного' : 'Добавить в избранное'}
-          </button>
-        </div>
-      </div>
+       <div className="movie-hero">
+  <img src={movie.poster} alt={movie.title} className="poster" />
+  
+  <div className="controls">
+    <h1>{movie.title}</h1>
+    
+    {/* Обернём кнопки в отдельный контейнер */}
+    <div className="buttons">
+      <button onClick={handleWatchClick}>Смотреть</button>
+      <button onClick={handleToggleFavorite}>
+        {isFavorite ? 'Убрать из избранного' : 'Добавить в избранное'}
+      </button>
+    </div>
+  </div>
+</div>
+
 
       {/* ПЛЕЕР */}
       {showPlayer && (
@@ -126,10 +133,36 @@ const MoviePage: React.FC = () => {
             )}
           </li>
           <li><strong>Страна:</strong> {movie.Country}</li>
-          <li><strong>Жанры:</strong> {movie.genres.join(', ')}</li>
+          <li>
+            <strong>Жанры:</strong>{' '}
+            {movie.genres.map((genre, index) => (
+               <span key={genre}>
+                 <Link to={`/genre/${encodeURIComponent(genre)}`}>{genre}</Link>
+                 {index < movie.genres.length - 1 && ', '}
+               </span>
+             ))}
+           </li>
+
           <li><strong>Длительность:</strong> {movie.duration}</li>
           <li><strong>Рейтинг:</strong> {movie.rating}/10</li>
         </ul>
+      </section>
+      <section className='related-movies'>
+        <h2>Похожие фильмы</h2>
+        <div className='movie-list'>
+          {movies
+             .filter((m) => m.id !== movie.id && m.genres.some((g) => movie.genres.includes(g)))
+             .slice(0, 4)
+             .map((related) => (
+               <div className='related-movie-card' key={related.id}>
+                <Link to={`/movie/${related.id}`} key={related.id}>
+                 <img src={related.poster} alt={related.id} />
+                 <h3>{related.title}</h3>
+                 <p>{related.year}</p>
+                </Link> 
+               </div>
+             ))}
+        </div>
       </section>
     </div>
   );

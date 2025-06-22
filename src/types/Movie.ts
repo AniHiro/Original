@@ -15,6 +15,7 @@ export interface Movie {
   Cast: string;
   Audiotrack: string;
   Subtitles: string;
+  type: 'movie' | 'cartoon';
   subtitles?: {
     chi?: string;
     kor?: string;
