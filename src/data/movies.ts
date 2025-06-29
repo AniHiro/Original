@@ -1,30 +1,6 @@
 import type { Movie } from '../types/Movie';
 
 export const movies: Movie[] = [
-  {
-    id: 'avatar2',
-    title: 'Avatar: The Way of Water',
-    type: 'movie',
-    year: 2022,
-    level: 'intermediate',
-    poster: '../../public/poster/h280_51328746.jpg',
-    video: '../../public/video/Avatar2.mp4',
-    description: 'Джейк Салли живёт с новой семьёй на Пандоре. Но когда угроза возвращается, он должен защитить свой дом.',
-    genres: ['Фантастика', 'Боевик', 'Приключения'],
-    duration: '3ч 12м',
-    rating: 8.2,
-    Originaltitle: 'Avatar: The Way of Water',
-    Country: "США",
-    Director: "Джеймс Кэмерон",
-    Cast: "Сэм Уортингтон, Зои Салдана, Сигурни Уивер, Вин Дизель, Стивен Лэнг, Мишель Йео, Кейт Уинслет, Клифф Кёртис, Джоэль Мур, Дэвид Тьюлис, Уна Чаплин, Си Си Эйч Паундер, Иди Фалько, Брендан Коуэлл, Джемейн Клемент, Джэми Флэттерс, Бритен Далтон, Тринити Блисс, Джек Чемпион, Бэйли Басс",
-    Audiotrack: 'ENG',
-    Subtitles: 'Rus, Eng, Double',
-    subtitles: {
-      en: '../../public/subtitles/Avatar2-en.vtt',
-      ru: '../../public/subtitles/Avatar2-ru.vtt',
-      dual: '../../public/subtitles/Avatar2-dual.vtt'
-    }
-  },
     {
     id: 'The.Match',
     title: 'The Match',
@@ -41,7 +17,7 @@ export const movies: Movie[] = [
     Country: "Южная Корея",
     Director: "Ким Хён-джу",
     Cast: "Ли Бён-хон, Ю А-ин, Ко Чхан-сок, Хён Бон-щик, Мун Джон-хи, Чо У-джин, Ким Ган-хун, Нам Мун-чхоль, Чу Джин-мо, Чон Му-сон",
-    Audiotrack: 'KOR',
+    Audiotrack: 'Korean',
     Subtitles: 'Rus, Kor, Double',
     subtitles: {
       kor: '../../public/subtitles/The.Match.kor.vtt',
@@ -49,7 +25,7 @@ export const movies: Movie[] = [
       dual: '../../public/subtitles/The.Match.dual.vtt'
     }
   },
-      {
+   {
     id: 'Dead Talents Society',
     title: 'Dead Talents Society',
     type: 'movie',
@@ -65,12 +41,180 @@ export const movies: Movie[] = [
     Country: "Тайвань",
     Director: "Джон Сюй",
     Cast: "Чэнь Болинь, Сандрин Пинна, Джингл Ван, Илэвен Яо, Пай Чинъи, Сосо Цзэн, Хуан Диян, Янь Жоя, Джек На, Линь Хэсюань",
-    Audiotrack: 'CHI',
+    Audiotrack: 'Chinese',
     Subtitles: 'Rus, Chi, Double',
     subtitles: {
       chi: '../../public/subtitles/dead.talents.society.chi.vtt',
       ru: '../../public/subtitles/dead.talents.society.rus.vtt',
       dual: '../../public/subtitles/dead.talents.society.dual.vtt'
+    }
+  },
+  {
+    id: 'Broken Rage',
+    title: 'Broken Rage',
+    type: 'movie',
+    year: 2024,
+    level: 'intermediate',
+    poster: '../../public/poster/w1500_53759073.jpg',
+    video: '../../public/video/Broken.Rage.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    description: 'Пожилой наёмный убийца по прозвищу Мышь получает от загадочного М конверты, в которых содержится информация о его «клиентах». Однажды полицейские ловят киллера и вынуждают внедриться в группировку якудза, контролирующую продажу наркотиков в Токио.',
+    genres: ['Комедия', 'Криминал',],
+    duration: '1ч 6м',
+    rating: 6.1,
+    Originaltitle: 'Broken Rage',
+    Country: "Япония",
+    Director: "Такеши Китано",
+    Cast: "Такеши Китано, Таданобу Асано, Нао Омори, Сидо Накамура, Хакурю, Такаси Нисина, Сёхэи Уно, Масато Яно, Адзуса Бабадзоно, Масанори Хасэгава",
+    Audiotrack: 'Japanese',
+    Subtitles: 'Rus, Jp, Double',
+    subtitles: {
+      jp: '../../public/subtitles/Broken.Rage.jpn.vtt',
+      ru: '../../public/subtitles/Broken.Rage.rus.vtt',
+      dual: '../../public/subtitles/Broken.Rage.dual.vtt'
+    }
+  },
+    {
+    id: 'Bullet Train Explosion',
+    title: 'Bullet Train Explosion',
+    type: 'movie',
+    year: 2025,
+    level: 'intermediate',
+    poster: '../../public/poster/Bullet_Train_Explosion.jpg',
+    video: '../../public/video/Bullet.Train.Explosion.2025.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    description: 'Скоростной поезд на пути в Токио грозит взорваться, если его скорость опустится ниже 100 км/ч. Правительство и сотрудники железнодорожной компании вступают в гонку со временем, пытаясь спасти пассажиров.',
+    genres: ['Боевик', 'Триллер',],
+    duration: '2ч 14м',
+    rating: 6.5,
+    Originaltitle: 'Shinkansen Daibakuha',
+    Country: "Япония",
+    Director: "Синдзи Хигути",
+    Cast: "Цуёси Кусанаги, Каната Хосода, Нон, Дзюн Канамэ, Матико Оно, Хана Тоёсима, Даисукэ Курода, Сатоси Мацуо, Судзука Ого, Мацуя Оноэ",
+    Audiotrack: 'Japanese',
+    Subtitles: 'Rus, Jp, Double',
+    subtitles: {
+      jp: '../../public/subtitles/Bullet.Train.Explosion.jpn.vtt',
+      ru: '../../public/subtitles/Bullet.Train.Explosion.rus.vtt',
+      dual: '../../public/subtitles/Bullet.Train.Explosion.dual.vtt'
+    }
+  },
+  {
+    id: 'The Boy and the Heron',
+    title: 'The Boy and the Heron',
+    type: 'anime',
+    year: 2023,
+    level: 'intermediate',
+    poster: '../../public/poster/w1500_52739161.jpg',
+    video: '../../public/video/The.Boy.And.The.Heron.2023.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    description: 'Через три года после начала Тихоокеанской войны мама мальчика Махито погибла при пожаре в Токио, а ещё через год отец женился на её сестре и отправил сына в фамильное поместье в сельской местности. Глава семьи работает на оборонном заводе и редко бывает дома, поэтому мальчику приходится проводить дни с беременной мачехой и в окружении пожилой прислуги, и, кроме того, с самого первого дня его донимает подозрительная серая цапля. Однажды птица говорит Махито, что может отвести его к матери, и заманивает в загадочную башню, которую окружает множество местных легенд.',
+    genres: ['Фэнтези', 'Драма', 'Приключения',],
+    duration: '2ч 4м',
+    rating: 7.9,
+    Originaltitle: 'Kimitachi wa Dou Ikiru ka',
+    Country: "Япония",
+    Director: "Хаяо Миядзаки",
+    Cast: "Сома Сантоки, Масаки Суда, Аимён, Ёсино Кимура, Ко Сибасаки, Сёхэи Хино, Такуя Кимура, Дзюн Кунимура, Каору Кобаяси, Дзюн Фубуки",
+    Audiotrack: 'Japanese',
+    Subtitles: 'Rus, Jp, Double',
+    subtitles: {
+      jp: '../../public/subtitles/the.boy.and.the.heron.jpn.vtt',
+      ru: '../../public/subtitles/the.boy.and.the.heron.rus.vtt',
+      dual: '../../public/subtitles/the.boy.and.the.heron.dual.vtt'
+    }
+  },
+  {
+    id: 'The Legend of Hei',
+    title: 'The Legend of Hei',
+    type: 'cartoon',
+    year: 2019,
+    level: 'intermediate',
+    poster: '../../public/poster/h280_37881402.jpg',
+    video: '../../public/video/The.Legend.Of.Hei.2019.REPACK.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4',
+    description: 'В современном мире разные духи мирно сосуществуют с людьми. Демон-кот Ло Сяохэй ищет себе новое пристанище после того, как лес, в котором он жил, был уничтожен. На своем пути он встречает других добродушных духов и серьезного человека и теперь должен сделать выбор – чью сторону принять.',
+    genres: ['Приключения', 'Фэнтези',],
+    duration: '1ч 41м',
+    rating: 8.0,
+    Originaltitle: 'Luo Xiaohei zhan ji',
+    Country: "Китай",
+    Director: "MTJJ",
+    Cast: "Шань Синь, Хао Сянхай, Лю Минъюэ, Цао Юньту, Чжан Шэн, Фэн Шэн, Ян Нин, Шэнь Няньжу, Ли Ланьлин, Е Чжицю",
+    Audiotrack: 'Chinese',
+    Subtitles: 'Rus, Chi, Double',
+    subtitles: {
+      chi: '../../public/subtitles/The.Legend.of.Hei.chi.vtt',
+      ru: '../../public/subtitles/The.Legend.of.Hei.rus.vtt',
+      dual: '../../public/subtitles/The.Legend.of.Hei.dual.vtt'
+    }
+  },
+  {
+    id: 'Yolo',
+    title: 'Yolo',
+    type: 'movie',
+    year: 2024,
+    level: 'intermediate',
+    poster: '../../public/poster/w1500_52883540.jpg',
+    video: '../../public/video/Yolo.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4',
+    description: '32-летняя Ду Лэин живёт с родителями, целыми днями валяется на диване и ест. Работы нет, личная жизнь разваливается, да и ещё и ссора с переехавшей в отчий дом сестрой — девушка съезжает и устраивается официанткой в ресторан. По соседству находится боксёрский зал, и, чтобы проводить больше времени с понравившимся ей тренером, Лэин начинает ходить на тренировки.',
+    genres: ['Спорт', 'Комедия', 'Драма'],
+    duration: '2ч 10м',
+    rating: 7.4,
+    Originaltitle: 'Re la gun tang',
+    Country: "Китай",
+    Director: "Цзя Лин",
+    Cast: "Цзя Лин, Лэй Цзяинь, Чжан Сяофэй, Ша И, Ян Цзы, Чжао Хайянь, Чжан Ци, Сюй Цзюньцун, Бу Юй, Шэнь Чуньян",
+    Audiotrack: 'Chinese',
+    Subtitles: 'Rus, Chi, Double',
+    subtitles: {
+      chi: '../../public/subtitles/yolo.chi.vtt',
+      ru: '../../public/subtitles/yolo.rus.vtt',
+      dual: '../../public/subtitles/yolo.dual.vtt'
+    }
+  },
+  {
+    id: 'Bogota: City of the Lost',
+    title: 'Bogota: City of the Lost',
+    type: 'movie',
+    year: 2024,
+    level: 'intermediate',
+    poster: '../../public/poster/w1500_53569127.jpg',
+    video: '../../public/video/Bogota.City.Of.The.Lost.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4',
+    description: 'История о молодых людях, эмигрировавших в Колумбию после экономического кризиса 1997 года.',
+    genres: ['Криминал', 'Драма',],
+    duration: '1ч 46м',
+    rating: 6.6,
+    Originaltitle: 'Bogota: majimak gihoeui ttang',
+    Country: "Южная Корея",
+    Director: "Ким Сон-джэ",
+    Cast: "Сон Джун-ги, Ли Хи-джун, Чо Хён-чхоль, Квон Хэ-хё, Пак Чи-хван, Лим Сон-джэ, Ким Хо-джон, Ким Тхэ-бэк, Ким Джон-су, Чон Джон-джун",
+    Audiotrack: 'Korean',
+    Subtitles: 'Rus, Kor, Double',
+    subtitles: {
+      kor: '../../public/subtitles/Bogota.kor.vtt',
+      ru: '../../public/subtitles/Bogota.rus.vtt',
+      dual: '../../public/subtitles/Bogota.dual.vtt'
+    }
+  },
+    {
+    id: 'Lost in Starlight',
+    title: 'Lost in Starlight',
+    type: 'cartoon',
+    year: 2025,
+    level: 'intermediate',
+    poster: '../../public/poster/w1500_54773303.jpg',
+    video: '../../public/video/Lost.In.Starlight.2025.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    description: '2051 год. Чу Нан-ён мечтает попасть в команду экспедиции на Марс, где 25 лет назад погибла её мать, но проваливает тест в НАСА и возвращается в Корею. Она продолжает разработку устройства для поиска органики и, когда решает починить старый мамин проигрыватель виниловых пластинок, знакомится с парнем, который обещает помочь ей с поиском деталей. Чем больше молодые люди узнают друг друга, тем сильнее влюбляются.',
+    genres: ['Мелодрама', 'Фантастика',],
+    duration: '1ч 36м',
+    rating: 7.2,
+    Originaltitle: 'I Byeol-e Pil-yohan',
+    Country: "Южная Корея",
+    Director: "Хан Джи-вон",
+    Cast: "Ким Тхэ-ри, Хон Гён, Шэрон Квон, Кан Гу-хан, Ан Ён-ми, Чан Ми, Юн А-ён, Чхве Хан, Дэвид Джей Роббинс, Ли Мён-хи",
+    Audiotrack: 'Korean',
+    Subtitles: 'Rus, Kor, Double',
+    subtitles: {
+      kor: '../../public/subtitles/Lost.in.Starlight.kor.vtt',
+      ru: '../../public/subtitles/Lost.in.Starlight.rus.vtt',
+      dual: '../../public/subtitles/Lost.in.Starlight.dual.vtt'
     }
   },
 ];

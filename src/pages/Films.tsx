@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './films.scss';
 
 const MoviesPage: React.FC = () => {
-  const [filter, setFilter] = useState<'all' | 'movie' | 'cartoon'>('all');
+  const [filter, setFilter] = useState<'all' | 'movie' | 'cartoon' | 'anime'>('all');
 
   const filteredMovies = movies.filter((movie) => {
     if (filter === 'all') return true;
@@ -19,6 +19,7 @@ const MoviesPage: React.FC = () => {
         <button onClick={() => setFilter('all')}>Все</button>
         <button onClick={() => setFilter('movie')}>Фильмы</button>
         <button onClick={() => setFilter('cartoon')}>Мультфильмы</button>
+        <button onClick={() => setFilter('anime')}>Аниме</button>
       </div>
 
       <div className="movie-grid">

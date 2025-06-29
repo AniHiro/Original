@@ -6,9 +6,11 @@ import Home from './pages/Home';
 import MoviePage from './pages/MoviePage';
 import FavoritesPage from './pages/FavoritesPage';
 import Footer from './components/Footer'
-import Films from './pages/films'
+import Films from './pages/Films'
 import GenresPage from './pages/GenresPage';
 import GenreMoviesPage from './pages/GenreMoviesPage';
+import LanguagesPage from './pages/LanguagesPage';
+import LanguageMoviesPage from './pages/LanguageMoviesPage';
 
 const App: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -27,6 +29,8 @@ const App: React.FC = () => {
             </>
           }
         />
+        <Route path="/language" element={<LanguagesPage />} />
+        <Route path="/language/:lang" element={<LanguageMoviesPage />} />
         <Route path="/genre" element={<GenresPage />} />
         <Route path="/genre/:genre" element={<GenreMoviesPage />} />
         <Route path="/films" element={<Films />} />

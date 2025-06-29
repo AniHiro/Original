@@ -1,0 +1,22 @@
+.language-movies-page {
+  padding: 2rem;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.movie-card {
+  width: 150px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}

@@ -18,6 +18,10 @@ const MoviePage: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
+  useEffect(() => {
     const handleFullscreenChange = () => {
       const fullscreenElement = document.fullscreenElement;
       if (!fullscreenElement && showPlayer) {
@@ -83,9 +87,9 @@ const MoviePage: React.FC = () => {
         <div className="video-player">
           <video ref={videoRef} controls autoPlay>
             <source src={movie.video} type="video/mp4" />
-            {movie.subtitles?.en && (
+            {/*{movie.subtitles?.en && (
               <track label="English" kind="subtitles" srcLang="en" src={movie.subtitles.en} default />
-            )}
+            )}*/}
             {movie.subtitles?.ru && (
               <track label="Русский" kind="subtitles" srcLang="ru" src={movie.subtitles.ru} />
             )}
@@ -95,6 +99,9 @@ const MoviePage: React.FC = () => {
             {movie.subtitles?.chi && (
               <track label="China" kind="subtitles" srcLang="chi" src={movie.subtitles.chi} />
             )}
+            {movie.subtitles?.jp && (
+              <track label="Japan" kind="subtitles" srcLang="jp" src={movie.subtitles.jp} />
+            )}            
             {movie.subtitles?.dual && (
               <track label="Двойные" kind="subtitles" srcLang="ru-en" src={movie.subtitles.dual} />
             )}
@@ -115,9 +122,22 @@ const MoviePage: React.FC = () => {
         <ul>
           <li><strong>Оригальное название:</strong> {movie.Originaltitle}</li>
           <li><strong>Уровень:</strong> {movie.level}</li>
-          <li><strong>Аудиодорожка:</strong> {movie.Audiotrack}</li>
-          <li><strong>Субтитры:</strong> {movie.Subtitles}</li>
-          <li><strong>Режиссёр:</strong> {movie.Director}</li>
+          <li>
+            <strong>Аудиодорожка:</strong>{' '}
+            <Link to={`/language/${encodeURIComponent(movie.Audiotrack)}`}>
+              {movie.Audiotrack}
+            </Link>
+          </li>
+          <li>
+            <strong>Субтитры:</strong>{' '}
+            {movie.Subtitles.split(', ').map((subtitle, index) => (
+              <span key={subtitle}>
+                <Link to={`/language/${encodeURIComponent(subtitle)}`}>{subtitle}</Link>
+                {index < movie.Subtitles.split(', ').length - 1 && ', '}
+              </span>
+            ))}
+          </li>
+          <li><strong>Режисcер:</strong> {movie.Director}</li>
           <li className="cast-item">
             <strong>Актёрский состав:</strong>{' '}
             {showFullCast
