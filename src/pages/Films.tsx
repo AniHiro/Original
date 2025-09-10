@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { movies } from '../data/movies';
 import { Link } from 'react-router-dom';
-import './Films.scss';
+import './films.scss';
 
 const MoviesPage: React.FC = () => {
   const [filter, setFilter] = useState<'all' | 'movie' | 'cartoon' | 'anime'>('all');
