@@ -7,8 +7,8 @@ export const movies: Movie[] = [
     type: 'movie',
     year: 2025,
     level: 'intermediate',
-    poster: '../../public/poster/The _Match.jpg',
-    video: '../../public/video/The.Match.2025.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    poster: '/poster/The _Match.jpg',
+    video: '/video/The.Match.2025.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
     description: 'В 1988 году одолев в финале первого кубка Инга китайца Не Вэйпина, Чо Хун-хён стал национальным героем и первым корейским игроком в го, выигравшим крупный международный турнир. Ещё несколько лет чемпиону Чо не было близких по уровню соотечественников, когда его подросший ученик Ли Чхан-хо, взятый на обучение ещё ребёнком, отвергает привычные стратегии игры и начинает побеждать заслуженных мастеров.',
     genres: ['Биография', 'Спорт', 'Драма'],
     duration: '1ч 55м',
@@ -20,9 +20,9 @@ export const movies: Movie[] = [
     Audiotrack: 'Korean',
     Subtitles: 'Rus, Kor, Double',
     subtitles: {
-      kor: '../../public/subtitles/The.Match.kor.vtt',
-      ru: '../../public/subtitles/The.Match.rus.vtt',
-      dual: '../../public/subtitles/The.Match.dual.vtt'
+      kor: '/subtitles/The.Match.kor.vtt',
+      ru: '/subtitles/The.Match.rus.vtt',
+      dual: '/subtitles/The.Match.dual.vtt'
     }
   },
    {
@@ -31,8 +31,8 @@ export const movies: Movie[] = [
     type: 'movie',
     year: 2025,
     level: 'intermediate',
-    poster: '../../public/poster/dead.talents.society.jpg',
-    video: '../../public/video/Dead.Talents.Society.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    poster: '/poster/dead.talents.society.jpg',
+    video: '/video/Dead.Talents.Society.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
     description: 'В загробном мире необычайно ценится способность качественно пугать живых. Пока противостояние за главную награду призрачного общества разворачивается между двумя дивами — Кэтрин, классическим призраком в старом отеле, и её бывшей протеже Джессикой, придумавшей проклятое видео, — ничем непримечательная недавно умершая девушка обнаруживает, что родственники случайно выкинули её грамоту и теперь через 30 дней она сама исчезнет навсегда. Чтобы этого не случилось, ей нужно поскорее создать свою городскую легенду, кого-нибудь напугав, но вот беда — у девушки совершенно нет таланта.',
     genres: ['Комедия', 'Фэнтези',],
     duration: '1ч 51м',
@@ -44,9 +44,9 @@ export const movies: Movie[] = [
     Audiotrack: 'Chinese',
     Subtitles: 'Rus, Chi, Double',
     subtitles: {
-      chi: '../../public/subtitles/dead.talents.society.chi.vtt',
-      ru: '../../public/subtitles/dead.talents.society.rus.vtt',
-      dual: '../../public/subtitles/dead.talents.society.dual.vtt'
+      chi: '/subtitles/dead.talents.society.chi.vtt',
+      ru: '/subtitles/dead.talents.society.rus.vtt',
+      dual: '/subtitles/dead.talents.society.dual.vtt'
     }
   },
   {
@@ -55,8 +55,8 @@ export const movies: Movie[] = [
     type: 'movie',
     year: 2024,
     level: 'intermediate',
-    poster: '../../public/poster/w1500_53759073.jpg',
-    video: '../../public/video/Broken.Rage.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    poster: '/poster/w1500_53759073.jpg',
+    video: '/video/Broken.Rage.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
     description: 'Пожилой наёмный убийца по прозвищу Мышь получает от загадочного М конверты, в которых содержится информация о его «клиентах». Однажды полицейские ловят киллера и вынуждают внедриться в группировку якудза, контролирующую продажу наркотиков в Токио.',
     genres: ['Комедия', 'Криминал',],
     duration: '1ч 6м',
@@ -68,9 +68,9 @@ export const movies: Movie[] = [
     Audiotrack: 'Japanese',
     Subtitles: 'Rus, Jp, Double',
     subtitles: {
-      jp: '../../public/subtitles/Broken.Rage.jpn.vtt',
-      ru: '../../public/subtitles/Broken.Rage.rus.vtt',
-      dual: '../../public/subtitles/Broken.Rage.dual.vtt'
+      jp: '/subtitles/Broken.Rage.jpn.vtt',
+      ru: '/subtitles/Broken.Rage.rus.vtt',
+      dual: '/subtitles/Broken.Rage.dual.vtt'
     }
   },
     {
@@ -79,8 +79,8 @@ export const movies: Movie[] = [
     type: 'movie',
     year: 2025,
     level: 'intermediate',
-    poster: '../../public/poster/Bullet_Train_Explosion.jpg',
-    video: '../../public/video/Bullet.Train.Explosion.2025.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    poster: '/poster/Bullet_Train_Explosion.jpg',
+    video: '/video/Bullet.Train.Explosion.2025.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
     description: 'Скоростной поезд на пути в Токио грозит взорваться, если его скорость опустится ниже 100 км/ч. Правительство и сотрудники железнодорожной компании вступают в гонку со временем, пытаясь спасти пассажиров.',
     genres: ['Боевик', 'Триллер',],
     duration: '2ч 14м',
@@ -92,9 +92,9 @@ export const movies: Movie[] = [
     Audiotrack: 'Japanese',
     Subtitles: 'Rus, Jp, Double',
     subtitles: {
-      jp: '../../public/subtitles/Bullet.Train.Explosion.jpn.vtt',
-      ru: '../../public/subtitles/Bullet.Train.Explosion.rus.vtt',
-      dual: '../../public/subtitles/Bullet.Train.Explosion.dual.vtt'
+      jp: '/subtitles/Bullet.Train.Explosion.jpn.vtt',
+      ru: '/subtitles/Bullet.Train.Explosion.rus.vtt',
+      dual: '/subtitles/Bullet.Train.Explosion.dual.vtt'
     }
   },
   {
@@ -103,8 +103,8 @@ export const movies: Movie[] = [
     type: 'anime',
     year: 2023,
     level: 'intermediate',
-    poster: '../../public/poster/w1500_52739161.jpg',
-    video: '../../public/video/The.Boy.And.The.Heron.2023.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    poster: '/poster/w1500_52739161.jpg',
+    video: '/video/The.Boy.And.The.Heron.2023.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
     description: 'Через три года после начала Тихоокеанской войны мама мальчика Махито погибла при пожаре в Токио, а ещё через год отец женился на её сестре и отправил сына в фамильное поместье в сельской местности. Глава семьи работает на оборонном заводе и редко бывает дома, поэтому мальчику приходится проводить дни с беременной мачехой и в окружении пожилой прислуги, и, кроме того, с самого первого дня его донимает подозрительная серая цапля. Однажды птица говорит Махито, что может отвести его к матери, и заманивает в загадочную башню, которую окружает множество местных легенд.',
     genres: ['Фэнтези', 'Драма', 'Приключения',],
     duration: '2ч 4м',
@@ -116,9 +116,9 @@ export const movies: Movie[] = [
     Audiotrack: 'Japanese',
     Subtitles: 'Rus, Jp, Double',
     subtitles: {
-      jp: '../../public/subtitles/the.boy.and.the.heron.jpn.vtt',
-      ru: '../../public/subtitles/the.boy.and.the.heron.rus.vtt',
-      dual: '../../public/subtitles/the.boy.and.the.heron.dual.vtt'
+      jp: '/subtitles/the.boy.and.the.heron.jpn.vtt',
+      ru: '/subtitles/the.boy.and.the.heron.rus.vtt',
+      dual: '/subtitles/the.boy.and.the.heron.dual.vtt'
     }
   },
   {
@@ -127,8 +127,8 @@ export const movies: Movie[] = [
     type: 'cartoon',
     year: 2019,
     level: 'intermediate',
-    poster: '../../public/poster/h280_37881402.jpg',
-    video: '../../public/video/The.Legend.Of.Hei.2019.REPACK.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4',
+    poster: '/poster/h280_37881402.jpg',
+    video: '/video/The.Legend.Of.Hei.2019.REPACK.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4',
     description: 'В современном мире разные духи мирно сосуществуют с людьми. Демон-кот Ло Сяохэй ищет себе новое пристанище после того, как лес, в котором он жил, был уничтожен. На своем пути он встречает других добродушных духов и серьезного человека и теперь должен сделать выбор – чью сторону принять.',
     genres: ['Приключения', 'Фэнтези',],
     duration: '1ч 41м',
@@ -140,9 +140,9 @@ export const movies: Movie[] = [
     Audiotrack: 'Chinese',
     Subtitles: 'Rus, Chi, Double',
     subtitles: {
-      chi: '../../public/subtitles/The.Legend.of.Hei.chi.vtt',
-      ru: '../../public/subtitles/The.Legend.of.Hei.rus.vtt',
-      dual: '../../public/subtitles/The.Legend.of.Hei.dual.vtt'
+      chi: '/subtitles/The.Legend.of.Hei.chi.vtt',
+      ru: '/subtitles/The.Legend.of.Hei.rus.vtt',
+      dual: '/subtitles/The.Legend.of.Hei.dual.vtt'
     }
   },
   {
@@ -151,8 +151,8 @@ export const movies: Movie[] = [
     type: 'movie',
     year: 2024,
     level: 'intermediate',
-    poster: '../../public/poster/w1500_52883540.jpg',
-    video: '../../public/video/Yolo.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4',
+    poster: '/poster/w1500_52883540.jpg',
+    video: '/video/Yolo.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4',
     description: '32-летняя Ду Лэин живёт с родителями, целыми днями валяется на диване и ест. Работы нет, личная жизнь разваливается, да и ещё и ссора с переехавшей в отчий дом сестрой — девушка съезжает и устраивается официанткой в ресторан. По соседству находится боксёрский зал, и, чтобы проводить больше времени с понравившимся ей тренером, Лэин начинает ходить на тренировки.',
     genres: ['Спорт', 'Комедия', 'Драма'],
     duration: '2ч 10м',
@@ -164,9 +164,9 @@ export const movies: Movie[] = [
     Audiotrack: 'Chinese',
     Subtitles: 'Rus, Chi, Double',
     subtitles: {
-      chi: '../../public/subtitles/yolo.chi.vtt',
-      ru: '../../public/subtitles/yolo.rus.vtt',
-      dual: '../../public/subtitles/yolo.dual.vtt'
+      chi: '/subtitles/yolo.chi.vtt',
+      ru: '/subtitles/yolo.rus.vtt',
+      dual: '/subtitles/yolo.dual.vtt'
     }
   },
   {
@@ -175,8 +175,8 @@ export const movies: Movie[] = [
     type: 'movie',
     year: 2024,
     level: 'intermediate',
-    poster: '../../public/poster/w1500_53569127.jpg',
-    video: '../../public/video/Bogota.City.Of.The.Lost.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    poster: '/poster/w1500_53569127.jpg',
+    video: '/video/Bogota.City.Of.The.Lost.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
     description: 'История о молодых людях, эмигрировавших в Колумбию после экономического кризиса 1997 года.',
     genres: ['Криминал', 'Драма',],
     duration: '1ч 46м',
@@ -188,9 +188,9 @@ export const movies: Movie[] = [
     Audiotrack: 'Korean',
     Subtitles: 'Rus, Kor, Double',
     subtitles: {
-      kor: '../../public/subtitles/Bogota.kor.vtt',
-      ru: '../../public/subtitles/Bogota.rus.vtt',
-      dual: '../../public/subtitles/Bogota.dual.vtt'
+      kor: '/subtitles/Bogota.kor.vtt',
+      ru: '/subtitles/Bogota.rus.vtt',
+      dual: '/subtitles/Bogota.dual.vtt'
     }
   },
     {
@@ -199,8 +199,8 @@ export const movies: Movie[] = [
     type: 'cartoon',
     year: 2025,
     level: 'intermediate',
-    poster: '../../public/poster/w1500_54773303.jpg',
-    video: '../../public/video/Lost.In.Starlight.2025.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
+    poster: '/poster/w1500_54773303.jpg',
+    video: '/video/Lost.In.Starlight.2025.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
     description: '2051 год. Чу Нан-ён мечтает попасть в команду экспедиции на Марс, где 25 лет назад погибла её мать, но проваливает тест в НАСА и возвращается в Корею. Она продолжает разработку устройства для поиска органики и, когда решает починить старый мамин проигрыватель виниловых пластинок, знакомится с парнем, который обещает помочь ей с поиском деталей. Чем больше молодые люди узнают друг друга, тем сильнее влюбляются.',
     genres: ['Мелодрама', 'Фантастика',],
     duration: '1ч 36м',
@@ -212,9 +212,9 @@ export const movies: Movie[] = [
     Audiotrack: 'Korean',
     Subtitles: 'Rus, Kor, Double',
     subtitles: {
-      kor: '../../public/subtitles/Lost.in.Starlight.kor.vtt',
-      ru: '../../public/subtitles/Lost.in.Starlight.rus.vtt',
-      dual: '../../public/subtitles/Lost.in.Starlight.dual.vtt'
+      kor: '/subtitles/Lost.in.Starlight.kor.vtt',
+      ru: '/subtitles/Lost.in.Starlight.rus.vtt',
+      dual: '/subtitles/Lost.in.Starlight.dual.vtt'
     }
   },
 ];

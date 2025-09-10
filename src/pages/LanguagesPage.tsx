@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { movies } from '../data/movies';
 
 const languageFlags = [
-  { id: 'Japanese', label: 'Японский', code: 'Japanese', flag: '../../public/poster/japan-flag-xs.jpg' },
-  { id: 'Korean', label: 'Корейский', code: 'Korean', flag: '../../public/poster/south-korea-flag-xs.jpg' },
-  { id: 'Chinese', label: 'Китайский', code: 'Chinese', flag: '../../public/poster/china-flag-xs.jpg' },
-  {/*{ id: 'English', label: 'Английский', code: 'English', flag: '../../public/poster/united-states-of-america-flag-xs.jpg' },*/}
+  { id: 'Japanese', label: 'Японский', code: 'Japanese', flag: '/poster/japan-flag-xs.jpg' },
+  { id: 'Korean', label: 'Корейский', code: 'Korean', flag: '/poster/south-korea-flag-xs.jpg' },
+  { id: 'Chinese', label: 'Китайский', code: 'Chinese', flag: '/poster/china-flag-xs.jpg' },
+  {/*{ id: 'English', label: 'Английский', code: 'English', flag: '/poster/united-states-of-america-flag-xs.jpg' },*/}
 ];
 
 const LanguagePage: React.FC = () => {
