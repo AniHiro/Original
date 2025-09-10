@@ -176,7 +176,7 @@ export const movies: Movie[] = [
     year: 2024,
     level: 'intermediate',
     poster: '../../public/poster/w1500_53569127.jpg',
-    video: '../../public/video/Bogota.City.Of.The.Lost.2024.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4',
+    video: '../../public/video/Bogota.City.Of.The.Lost.2024.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4',
     description: 'История о молодых людях, эмигрировавших в Колумбию после экономического кризиса 1997 года.',
     genres: ['Криминал', 'Драма',],
     duration: '1ч 46м',
