@@ -17,18 +17,6 @@
 
 ---
 
-## 🖼️ Скриншоты
-
-### Главная страница
-![Главная](https://raw.githubusercontent.com/AniHiro/Original/main/screenshots/home.png)
-
-### Страница фильма
-![Фильм](https://raw.githubusercontent.com/AniHiro/Original/main/screenshots/movie.png)
-
-*(ты можешь добавить скрины в папку `screenshots/` в репозитории)*
-
----
-
 ## 🛠️ Технологии
 
 - ⚛️ **React** (Vite)
