@@ -30,7 +30,7 @@
 ## 📌 Рассмотренные темы
 
 <details>
-  <summary>⚛️ React.js</summary>
+  <summary>⚛️ React</summary>
 
 - Компоненты и пропсы  
 - Управление состоянием (useState, useEffect)  
