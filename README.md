@@ -59,7 +59,8 @@
 - Slice для избранного  
 - Хуки (useDispatch, useSelector) 
 - Инициализация состояния из localStorage при загрузке приложения
-- Работа с сериализацией (JSON.stringify / JSON.parse) 
+- Работа с сериализацией (JSON.stringify / JSON.parse)
+- Сохранение состояния между сессиями с помощью redux-persist
 </details>
 
 <details>
