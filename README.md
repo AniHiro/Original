@@ -1,54 +1,92 @@
-# React + TypeScript + Vite
+# 🎥 Original — Фильмы, мультфильмы и сериалы
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Добро пожаловать в **Original** — сайт для просмотра фильмов, мультфильмов и сериалы онлайн.  
+Сайт сделан на **React + TypeScript + SCSS** и развёрнут на **Vercel**.  
 
-Currently, two official plugins are available:
+👉 [Посмотреть сайт](https://original-mocha.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Функционал
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ Список фильмов, мультфильмов и сериалы  
+✅ Фильтрация по категориям  
+✅ Страница с описанием фильма  
+✅ Поддержка избранного (Redux)  
+✅ Красивая сетка постеров 🎬  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Технологии
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- ⚛️ **React** (Vite)
+- 💎 **TypeScript**
+- 🎨 **SCSS**
+- 📦 **Redux Toolkit** (для избранного)
+- ☁️ **Vercel** (хостинг)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📌 Рассмотренные темы
+
+<details>
+  <summary>⚛️ React</summary>
+
+- Функциональные компоненты с хуками (useState, useEffect)
+- Маршрутизация с React Router
+- Интеграция React + Redux 
+- Условный рендеринг и работа с медиа
+- Типизация компонентов в TypeScript
+- Локальное хранилище (localStorage)
+- SCSS-модули для стилизации компонентов
+</details>
+
+<details>
+  <summary>🌐 React Router</summary>
+
+- Навигация между страницами  
+- Динамические маршруты (`/movie/:id`, `/language/:id`)  
+- Переходы между страницами с помощью Link
+- Получение параметров URL через useParams
+- Компоненты реактивно отрисовываются под разные маршруты
+- Комбинация маршрутов + логики компонента: может показывать разные данные в зависимости от параметров маршрута  
+</details>
+
+<details>
+  <summary>🗂 Redux </summary>
+
+- Настройка Redux Toolkit (createSlice, PayloadAction) 
+- Slice для избранного  
+- Хуки (useDispatch, useSelector) 
+- Инициализация состояния из localStorage при загрузке приложения
+- Работа с сериализацией (JSON.stringify / JSON.parse)
+- Сохранение состояния между сессиями с помощью redux-persist
+</details>
+
+<details>
+  <summary>🛠 Общее</summary>
+
+- Работа с локальным JSON (mock-данные фильмов)  
+- Подключение и хранение изображений (постеры, баннеры)  
+- Организация структуры проекта (pages, components, store, types)  
+</details>
+
+<details>
+  <summary>📜 TypeScript</summary>
+
+- Использование интерфейсов / типов для описания модели данных (например, Movie)
+- Типизация действий Redux через PayloadAction<T> и типизация состояния
+- Типизация хуков React (useState<...>)
+- Типизация пропсов компонентов (интерфейсы Prop types)
+- Использование RootState для безопасного доступа к стейту через useSelector
+</details>
+
+<details>
+  <summary>🎨 Вёрстка (SCSS)</summary>
+
+- Структурированная стилизация: SCSS-файлы по компонентам / страницам
+- Использование именованных классов, отражающих контекст компонента
+- Импорт SCSS в React и применение стилей к JSX-элементам
+- Стилизация интерактивных элементов — hover, переходы, визуальные эффекты.
+- Ховеры и анимации (например, на карточках языков)  
+</details>
