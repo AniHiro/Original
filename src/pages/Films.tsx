@@ -1,10 +1,37 @@
-import React, { useState } from 'react';
+import React, { useEffect,useState } from 'react';
 import { movies } from '../data/movies';
 import { Link } from 'react-router-dom';
 import './films.scss';
+import { fetchMovies } from '../api/movies';
+import type { Movie } from '../types/Movie';
+
 
 const MoviesPage: React.FC = () => {
+  const [movies, setMovies] = useState<Movie[]>([]);
   const [filter, setFilter] = useState<'all' | 'movie' | 'cartoon' | 'anime'>('all');
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let mounted = true;
+
+    const load = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        const data = await fetchMovies();
+        if (mounted) await setMovies(data);
+      } catch (err: any) {
+        if (mounted) setError(err.message || 'Ошибка загрузки');
+      } finally {
+        if (mounted) setLoading(false)
+      }
+    };
+
+    load();
+
+    return () => { mounted = false; };
+  }, []);
 
   const filteredMovies = movies.filter((movie) => {
     if (filter === 'all') return true;
@@ -22,6 +49,10 @@ const MoviesPage: React.FC = () => {
         <button onClick={() => setFilter('anime')}>Аниме</button>
       </div>
 
+      {loading && <div className='loading'>Загрузка фильмов...</div>}
+      {error && <div className='error'>Ошибка: {error}</div>}
+
+     {!loading && !error && (
       <div className="movie-grid">
         {filteredMovies.map((movie) => (
           <Link to={`/movie/${movie.id}`} className="movie-card" key={movie.id}>
@@ -31,6 +62,11 @@ const MoviesPage: React.FC = () => {
           </Link>
         ))}
       </div>
+    )}
+
+    {!loading && !error && filteredMovies.length === 0 && (
+      <p>Фильмы не найдены</p>
+    )}
     </div>
   );
 };

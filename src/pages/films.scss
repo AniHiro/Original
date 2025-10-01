@@ -45,3 +45,17 @@
     }
   }
 }
+
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.loading {
+  color: #fff;
+}
+
+.error {
+  color: red;
+}
