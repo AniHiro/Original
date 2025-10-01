@@ -1,5 +1,4 @@
 import React, { useEffect,useState } from 'react';
-import { movies } from '../data/movies';
 import { Link } from 'react-router-dom';
 import './films.scss';
 import { fetchMovies } from '../api/movies';
@@ -72,3 +71,6 @@ const MoviesPage: React.FC = () => {
 };
 
 export default MoviesPage;
+
+
+
